@@ -1,0 +1,78 @@
+.lp-header-search {
+    position: relative;
+}
+
+.lp-header-search input {
+    height: 40px;
+    width: 40px;
+    padding: 10px 18px;
+    box-sizing: border-box;
+    font-size: 18px;
+    border: 2px solid transparent;
+    border-radius: 44px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 0.5s ease-out;
+    color: transparent;
+}
+
+.lp-header-search input::placeholder {
+    color: transparent;
+}
+      
+.lp-header-search input:invalid {
+    box-shadow: none;
+}
+      
+.lp-header-search input:hover {
+    border: 2px solid #FFF;
+    box-shadow: 0 0 2px 2px #EEE;
+}
+
+.lp-header-search input:focus,
+.lp-header-search input:valid {
+    width: 160px;
+    border: 2ox solid #CCC;
+    outline: none;
+    cursor: auto;
+    background-color: #FFF;
+    color: #000;
+}
+
+.lp-header-search input::placeholder {
+    color: #999;
+}
+
+.lp-header-search .lp-header-search-icon {
+    z-index: 0;
+    border-color: #CCC;
+    right: 12px;
+}
+    
+.lp-header-search .lp-header-search-icon:after {
+    background-color: #CCC;
+}
+
+.lp-header-search-icon {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid #FFF;
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    z-index: -1;
+}
+
+.lp-header-search-icon:after {
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: 14px;
+    transform: rotate(45deg);
+    height: 2px;
+    width: 10px;
+    background-color: #FFF;
+    border-radius: 10px;
+}

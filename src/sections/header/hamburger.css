@@ -1,0 +1,101 @@
+.lp-header-hamburger-menu-container {
+  display: block;
+  position: relative;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  height: 23px;
+}
+
+.lp-header-hamburger-menu-container a {
+  text-decoration: none;
+  color: #1F2833;
+  transition: color 0.3s ease;
+}
+
+.lp-header-hamburger-menu-container a:hover {
+  color: #45A29E;
+}
+
+
+.lp-header-hamburger-menu-container input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+.lp-header-hamburger-menu-container span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #66FCF1;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+.lp-header-hamburger-menu-container span:first-child {
+  transform-origin: 0% 0%;
+}
+
+.lp-header-hamburger-menu-container span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+.lp-header-hamburger-menu-container input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+.lp-header-hamburger-menu-container input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.lp-header-hamburger-menu-container input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+.lp-header-hamburger-menu {
+  position: absolute;
+  width: 300px;
+  margin: -55px 0 0 -50px;
+  padding: 50px;
+  height: 100vh;
+  padding-top: 75px;
+  background: #C5C6C7;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(35%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+.lp-header-hamburger-menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+.lp-header-hamburger-menu-container input:checked ~ ul {
+  transform: translate(-60%, 0);;
+}
+
+.lp-header-hamburger-menu-title {
+    color: #FFFFFF;
+    position: absolute;
+    top: 2px;
+    left: -50px;
+}

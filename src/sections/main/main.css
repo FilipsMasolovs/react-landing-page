@@ -1,0 +1,11 @@
+.lp-main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 650px) {
+    .lp-main-container {
+        flex-direction: row;
+        flex-flow: wrap;
+    }
+}

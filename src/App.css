@@ -5,9 +5,16 @@
 *::after,
 *::before {
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
-    margin: 0;
     font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.lp-divider {
+    padding: 20px;
+    background-color: #FFFFFF;
 }

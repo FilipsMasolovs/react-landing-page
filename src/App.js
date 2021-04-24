@@ -1,11 +1,20 @@
-import './App.css';
+import React from "react"
 
-function App() {
+import './App.css'
+
+import Header from './sections/header/header'
+import Spotlight from './sections/spotlight/spotlight'
+import Main from './sections/main/main'
+import Gallery from './sections/gallery/gallery'
+
+export default function App() {
   return (
-    <div className="App">
-      
-    </div>
-  );
+    <>
+      <Header />
+      <Spotlight />
+      <Main />
+      <Gallery />
+      <div className='lp-divider' />
+    </>
+  )
 }
-
-export default App;

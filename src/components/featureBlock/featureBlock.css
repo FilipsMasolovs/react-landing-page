@@ -1,0 +1,60 @@
+.lp-feature-block-main {
+    background-image: url(./assets/feature-block-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    height: 66.66%;
+}
+
+.lp-feature-block-description,
+.lp-feature-block-data {
+    color: #FFFFFF;
+}
+
+.lp-feature-block-main-features {
+    display: flex;
+    height: 33.33%;
+}
+
+.lp-feature-block-main-feature {
+    background-color: #1F2833;
+    display: flex;
+    flex-flow: column;
+    width: 50%;
+    padding: 20px;
+    gap: 20px;
+}
+
+.lp-feature-block-main-feature:nth-child(2) {
+    background-image: url(./assets/feature-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.lp-feature-block-main-feature:nth-child(2) .lp-feature-block-main-feature-data {
+    color: #1F2833;
+}
+
+.lp-feature-block-main-feature .lp-heading {
+    flex-grow: 1;
+}
+
+.lp-feature-block-main-feature-data {
+    color: #FFFFFF;
+}
+
+@media only screen and (min-width: 650px) {
+    .lp-feature-block-container {
+        width: 66.66%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .lp-feature-block-container {
+        width: 50%;
+    }
+}
